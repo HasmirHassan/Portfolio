@@ -6,17 +6,94 @@
     <title>My Protfolio</title>
 </head>
 <body>
+    <!--Section: navbar-->
+    <nav>
+        <ul>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Contact">contact</a></li>
+            <li><a href="#Skill">My Skills</a></li>
+            <li><a href="#Project">My Projects</a></li>
+        </ul>
+    </nav>
     <!--Section: Intro-->
-    <header>
+    <header id="Intro">
         <h1>Hasmir Hassan</h1>
-        <p>Student And Learner</p>
+        <p><em>Student And Learner</em></p>
+        <img src="./image/github.jpg" alt="profile image" height="150"/>
         <hr />
     </header>
 
     <!--Section: About Me-->
-
+    <section id="About">
+        <h2>About Me</h2>
+        <p><strong>Experience:</strong> No experience yet. I am learning web development</p>
+        <p><strong>Education:</strong> I am a student of 3rd semester</p>
+       
+    </section>
     <!--Section: Skills-->
+    <section id="Skill">
+        <h2>Skills</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Basic</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <!--Section: Contacs-->
+    <!--Section: Projects-->
+    <section id="Project">
+        <h2>Project</h2>
+        <ul>
+            <li> <a target="blank" href="https://github.com/HasmirHassan/Portfolio/commits/main/">Portfolio-Website</a></li>
+            <li>UMS</li>
+            <li>Supply chain Management System</li>
+        </ul>
+    </section>
+    <!--Section: Contacts-->
+    <section id="Contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div>
+                <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required/>
+            </div>
+
+           <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required/>
+           </div>
+
+           <div>
+            <label for="message">Message: </label>
+           <textarea name="message" id="message" cols="20" rows="10" ></textarea>
+           </div>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+    </section>
+    <!--Section: footer-->
+    <footer id="Footer">
+        <p>Copyright reserved by Hasmir2024</p>
+        <a href="tel: 01875550317">Call me</a>
+        <a href="mailto: hasmirhassan@gmail.com">Email Me</a>
+    </footer>
 </body>
 </html>
