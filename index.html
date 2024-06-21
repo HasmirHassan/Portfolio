@@ -45,7 +45,7 @@
         <section id="About">
             <h2>About Me</h2>
             <p><strong>Experience:</strong> No experience yet. I am learning web development</p>
-            <p><strong>Education:</strong> I am a student of 3rd semester</p>
+            <p><strong>Education:</strong> I am a student of 3rd semester at Banggobondhu sheikh mujibur rahman digital university.</p>
            
         </section>
         <!--Section: Skills-->
@@ -114,6 +114,8 @@
         <section id="Contact">
             <h2>Contact Me</h2>
             <form>
+               <fieldset>
+                <legend>Personal Information</legend>
                 <div>
                     <label for="name">Name: </label>
                 <input type="text" id="name" name="name" required/>
@@ -128,9 +130,31 @@
                 <label for="Age">Age:</label>
                 <input type="number" name="Age" id="Age" min="18" required />
                </div>
+               </fieldset>
 
                <div>
-                <label for="website">Website</label>
+                <label for="color">Favourite Color:</label>
+                <input type="color" name="color" id="color" value="#ff0000" required />
+               </div>
+
+               <div>
+                <label for="range">Years of development:</label>
+                <input type="range" name="range" id="range" min="0" max="10" required />
+               </div>
+
+               <div>
+                <label for="programming">Favourite programming:</label>
+                <input list="language" name="programming" id="programming"required />
+                <datalist id="language">
+                    <option value="c"></option>
+                    <option value="c++"></option>
+                    <option value="Java"></option>
+                    <option value="Javascript"></option>
+                </datalist>
+               </div>
+
+               <div>
+                <label for="website">Website:</label>
                 <input type="url" name="website" id="website" pattern="https?://.+" />
                </div>
 
